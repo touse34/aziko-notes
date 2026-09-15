@@ -9,27 +9,43 @@ export default defineConfig({
       sidebar: [
         {
           label: 'CUDA',
-          autogenerate: {
-            directory: 'cuda',
-          },
+          items: [
+            {
+              autogenerate: {
+                directory: 'cuda',
+              },
+            },
+          ],
         },
         {
           label: 'AI Infra',
-          autogenerate: {
-            directory: 'ai-infra',
-          },
+          items: [
+            {
+              autogenerate: {
+                directory: 'ai-infra',
+              },
+            },
+          ],
         },
         {
           label: 'C++',
-          autogenerate: {
-            directory: 'cpp',
-          },
+          items: [
+            {
+              autogenerate: {
+                directory: 'cpp',
+              },
+            },
+          ],
         },
         {
           label: 'Linux',
-          autogenerate: {
-            directory: 'linux',
-          },
+          items: [
+            {
+              autogenerate: {
+                directory: 'linux',
+              },
+            },
+          ],
         },
       ],
     }),
