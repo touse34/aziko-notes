@@ -6,7 +6,7 @@ hero:
   tagline: 记录 CUDA、AI Infra、C++、Linux 和系统学习过程
   actions:
     - text: 阅读最新 CUDA 笔记
-      link: /cuda/int-vs-bool-registers/
+      link: /cuda/thread-block-warp-shared-memory-occupancy/
       icon: right-arrow
 ---
 
@@ -19,6 +19,11 @@ import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 ### 最新笔记
 
 <CardGrid>
+  <LinkCard
+    title="Thread、Block、Warp 与 Shared Memory 如何影响 CUDA 理论占用率？"
+    href="/cuda/thread-block-warp-shared-memory-occupancy/"
+    description="从统一公式、资源 limiter 和对比算例出发，理解 occupancy 的阶梯效应与性能边界。"
+  />
   <LinkCard
     title="CUDA 中 int 换成 bool 会减少寄存器吗？"
     href="/cuda/int-vs-bool-registers/"
