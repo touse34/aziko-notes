@@ -4,11 +4,27 @@ description: 我的计算机学习笔记
 template: splash
 hero:
   tagline: 记录 CUDA、AI Infra、C++、Linux 和系统学习过程
+  actions:
+    - text: 阅读最新 CUDA 笔记
+      link: /cuda/int-vs-bool-registers/
+      icon: right-arrow
 ---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 ## Notes
 
 这里记录我在计算机学习和项目实践中遇到的问题、实验和结论。
+
+### 最新笔记
+
+<CardGrid>
+  <LinkCard
+    title="CUDA 中 int 换成 bool 会减少寄存器吗？"
+    href="/cuda/int-vs-bool-registers/"
+    description="从 C++ 类型、PTX 谓词到物理寄存器与 occupancy，理解为什么答案不是简单的“会”。"
+  />
+</CardGrid>
 
 ### 主要内容
 
